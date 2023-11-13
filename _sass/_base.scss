@@ -148,6 +148,22 @@ p {
     }
   }
 
+  .technologies-list {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .technology-value {
+      color: rgba(256, 256, 256, 0.6);
+      font-weight: 500;
+      margin-bottom: 0px;
+      margin-top: 0;
+    }
+  }
+
   .interests-list {
     margin-bottom: 0;
     li {
@@ -155,6 +171,13 @@ p {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    .details
+    {
+      color: rgba(256, 256, 256, 0.6);
+      font-weight: 500;
+      margin-bottom: 0px;
+      margin-top: 0;
     }
   }
 }
@@ -173,6 +196,12 @@ p {
     margin-top: 0;
     margin-bottom: 20px;
   }
+  .summary {
+    p {
+      text-indent: 15px;
+      margin-bottom: 0;
+    }
+  }
   .section {
     margin-bottom: 60px;
   }
@@ -181,6 +210,29 @@ p {
   .educations-section {
     .item {
       margin-bottom: 30px;
+    }
+    .experience-subsection {
+      position: relative;
+      display: flex;
+
+      .systems-title,
+      .technologies-title {
+        position: relative;
+        margin-top: 0;
+        text-indent: 30px;
+        left: 0;
+        top: 0;
+        flex: 25%;
+        color: darken($theme-color, 15%);
+      }
+      .systems-value,
+      .technologies-value {
+        position:relative;
+        right: 0;
+        top: 0;
+        text-indent: 30px;
+        text-align: right;
+      }
     }
   }
   .upper-row,
@@ -192,6 +244,8 @@ p {
   }
   .job-title,
   .degree,
+  .interest-item
+  .technology-title
   .cert-title{
     color: $text-color;
     font-size: 16px;
@@ -214,7 +268,12 @@ p {
     margin-bottom: 10px;
     color: $text-grey;
   }
-
+  .project
+  {
+    margin-bottom: 0;
+    color: $text-grey;
+    font-style:oblique;
+  }
   .project-title {
     font-size: 16px;
     font-weight: 400;

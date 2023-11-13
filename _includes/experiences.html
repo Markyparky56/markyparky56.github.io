@@ -19,6 +19,7 @@
         <div class="time">{{ experience.time }}</div>
       </div><!--//upper-row-->
 
+      <div class="project">{{ experience.project }}</div>
       <div class="company">{{ experience.company }}</div>
 
     </div><!--//meta-->
@@ -26,6 +27,14 @@
     {% if experience.details %}
     <div class="details">
       {{ experience.details | markdownify }}
+      <div class="experience-subsection">
+        <h3 class="systems-title">Systems</h3>
+        <div class="systems-value">{{ experience.systems }}</div>
+      </div>
+      <div class="experience-subsection">
+        <h3 class="technologies-title">Technologies</h3>
+        <div class="technologies-value">{{ experience.technologies }}</div>
+      </div>
     </div><!--//details-->
     {% endif %}
 
